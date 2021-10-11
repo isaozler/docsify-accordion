@@ -24,7 +24,7 @@ window.$docsify = {
 
 ### Example FAQ Page
 
-Starting your line with `+ ` and ending with ` +` (spaces are important) will convert the list into an accordion
+Starting your line with `+(space)` and ending with `(space)+` (spaces are important) will convert the list into an accordion
 
 ```md
 
