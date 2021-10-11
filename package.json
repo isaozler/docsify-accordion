@@ -1,0 +1,23 @@
+{
+  "name": "docsify-accordion",
+  "version": "0.0.1",
+  "description": "Small plugin to use accordions in your docsify documentations",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaozler/docsify-accordion.git"
+  },
+  "keywords": [
+    "docsify",
+    "accordion"
+  ],
+  "author": "IO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaozler/docsify-accordion/issues"
+  },
+  "homepage": "https://github.com/isaozler/docsify-accordion#readme"
+}
