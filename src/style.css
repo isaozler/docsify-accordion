@@ -73,3 +73,23 @@ ul.accordion-wrapper > li:not(:first-of-type) {
 .accordion.active .accordion-content-container {
   display: block !important;
 }
+
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  float:right;
+  margin-top: 1.25%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

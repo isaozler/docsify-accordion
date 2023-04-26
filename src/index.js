@@ -30,22 +30,43 @@
           element.firstChild.addEventListener('click', function (e) {
 
             if (e.target.parentElement.classList.contains('active')) {
-              e.target.parentElement.classList.remove('active')
+              e.target.parentElement.classList.remove('active');
+              //Change arrow
+              let arrow= e.target.childNodes.item(1).classList;
+              arrow.remove("down");
+              arrow.add("right");
             } else {
               document.querySelectorAll("li").forEach(function (_el) {
                 if (_el.classList.contains("accordion")) {
                   _el.classList.remove("active");
+                  //Change arrow
+                  let arrow = _el.children.item(0).children.item(0).classList;
+                  arrow.remove("down");
+                  arrow.add("right");
                 }
               });
               e.target.parentElement.classList.add('active')
+              //Change arrow
+              let arrow=e.target.childNodes.item(1).classList
+              arrow.remove("right");
+              arrow.add("down");
             }
           })
 
+          element.firstChild.textContent = element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
+
+          //Add arrows
+          let arrow=document.createElement("i")
           if (indexAccordionItemIndex === 0) {
             element.classList.add("active");
+            arrow.classList.add("arrow","down")
           }
+          else{
+            arrow.classList.add("arrow","right")
+          }
+          let p=element.children.item(0);
+          p.appendChild(arrow)
 
-          element.firstChild.textContent = element.firstChild.textContent.substring(0, element.firstChild.textContent.length - 2);
           indexAccordionItemIndex++;
         }
       });
@@ -54,4 +75,3 @@
 
   window.$docsify.plugins = [].concat(io_accordion, $docsify.plugins)
 }());
-

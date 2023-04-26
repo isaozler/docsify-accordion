@@ -28,3 +28,8 @@ Introduction text for the FAQ page.
   Answer 2
 
 ```
+
+It will look like this.
+
+![Screenshot](Screenshot.png)
+
