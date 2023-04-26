@@ -1,6 +1,6 @@
 {
   "name": "docsify-accordion",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Small plugin to use accordions in your docsify documentations",
   "main": "src/index.js",
   "scripts": {
